@@ -1,0 +1,11 @@
+:root {
+    --primary: #0d0106;
+    --secondary: #fbfbff;
+    --highlights: #657ed4;
+    --rightWrong: lightcoral; 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
