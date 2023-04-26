@@ -1,11 +1,71 @@
 :root {
-    --primary: #0d0106;
-    --secondary: #fbfbff;
-    --highlights: #657ed4;
-    --rightWrong: lightcoral; 
+    --primary: #2b3a67;
+    --secondary: #496a81;
+    --title: #f7f7f9;
+    --accents: #e2c044; 
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
+    font-family: Montseratt, Open Sans, sans-serif;
+}
+header {
+    text-align: center;
+    padding: 20px;
+    background-image: linear-gradient(
+        to right, var(--primary) , var(--secondary));
+}
+header h1 {
+    color: var(--title);
+}
+.searchCity {
+    width: 25%;
+    display: inline-block;
+    padding: 20px; 
+    border-bottom: 2px solid var(--secondary); 
+}
+.searchCity input[type=text] {
+    padding: 5px;
+    margin-top: 8px;
+    font-size: 17px;
+}
+.searchCity button {
+    display: flex;
+    background-color: var(--secondary);
+    margin-left: 3px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 5px 65px;
+    color: var(--title);
+    border: 0;
+}
+.searchCity button:hover {
+    background-color: var(--accents);
+  }
+.currentWeather {
+    padding: 20px;
+    clear: both; 
+    float: right;
+    width: 75%;
+    border: 2px solid black; 
+    
+}
+.savedCities {
+    width: 25%;
+    display: inline-block;
+    padding: 20px; 
+    /* border: 2px solid black; */
+}
+.futureWeather {
+    padding: 20px;
+    clear: both; 
+    float: right;
+    width: 75%;
+    height: 100%;
+    border: 2px solid black; 
 }
