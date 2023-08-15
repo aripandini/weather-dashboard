@@ -1,7 +1,8 @@
 var APIKey = "977e63b2d68c30cbf1c994dc6f863f73";
-var city = "";
-var lat = "";
-var lon = "";
+var city = document.getElementById('ctiyName');
+
+// var lat = "";
+// var lon = "";
 
 
 var searchBtn = document.getElementById("searchBtn");

@@ -32,7 +32,7 @@ header h1 {
     margin-top: 8px;
     font-size: 17px;
 }
-.searchCity button {
+.searchCity button, .savedCities button {
     display: flex;
     background-color: var(--secondary);
     margin-left: 3px;
@@ -44,7 +44,7 @@ header h1 {
     color: var(--title);
     border: 0;
 }
-.searchCity button:hover {
+.searchCity button:hover, .savedCities button:hover {
     background-color: var(--accents);
   }
 .currentWeather {
@@ -53,7 +53,7 @@ header h1 {
     clear: both; 
     float: right;
     width: 75%;
-    border: 2px solid black; 
+    /* border: 2px solid black;  */
     
 }
 .savedCities {
@@ -68,5 +68,5 @@ header h1 {
     float: right;
     width: 75%;
     height: 100%;
-    border: 2px solid black; 
+    /* border: 2px solid black;  */
 }
