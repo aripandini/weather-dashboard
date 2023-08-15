@@ -48,6 +48,7 @@ header h1 {
     background-color: var(--accents);
   }
 .currentWeather {
+    display: flex; 
     padding: 20px;
     clear: both; 
     float: right;
