@@ -1,13 +1,18 @@
 :root {
-    --primary: #2b3a67;
-    --secondary: #496a81;
-    --title: #f7f7f9;
-    --accents: #e2c044; 
+    --first: #5AA9E6;
+    --second: #FF6392;
+    --title: #F9F9F9;
+    --accents: #FF85A9; 
+    --background-color: #7FC8F8;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.forecastDiv  {
+    background-color: var(--background-color);
 }
 body {
     font-family: Montseratt, Open Sans, sans-serif;
@@ -16,7 +21,7 @@ header {
     text-align: center;
     padding: 20px;
     background-image: linear-gradient(
-        to right, var(--primary) , var(--secondary));
+        to right, var(--first) , var(--second));
 }
 header h1 {
     color: var(--title);
@@ -24,17 +29,16 @@ header h1 {
 .searchCity {
     width: 25%;
     display: inline-block;
-    padding: 20px; 
-    border-bottom: 2px solid var(--secondary); 
+    padding: 20px;
+    border-bottom: 2px solid var(--second); 
 }
 .searchCity input[type=text] {
     padding: 5px;
     margin-top: 8px;
     font-size: 17px;
 }
-.searchCity button {
-    display: flex;
-    background-color: var(--secondary);
+.searchCity button, .savedCities button {
+    background-color: var(--second);
     margin-left: 3px;
     margin-top: 10px;
     cursor: pointer;
@@ -44,22 +48,20 @@ header h1 {
     color: var(--title);
     border: 0;
 }
-.searchCity button:hover {
+.searchCity button:hover, .savedCities button:hover {
     background-color: var(--accents);
   }
 .currentWeather {
+    display: flex; 
     padding: 20px;
     clear: both; 
     float: right;
     width: 75%;
-    border: 2px solid black; 
-    
 }
 .savedCities {
     width: 25%;
     display: inline-block;
     padding: 20px; 
-    /* border: 2px solid black; */
 }
 .futureWeather {
     padding: 20px;
@@ -67,5 +69,8 @@ header h1 {
     float: right;
     width: 75%;
     height: 100%;
-    border: 2px solid black; 
+}
+#curWeather {
+    background: rgba(127, 200, 248);
+    color: var(--title);
 }
