@@ -11,9 +11,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-.forecastDiv  {
+/* .forecastDiv  {
     background-color: var(--background-color);
-}
+    border: solid rgba(127, 200, 248, .8);
+    
+} */
 body {
     font-family: Montseratt, Open Sans, sans-serif;
 }
@@ -69,8 +71,10 @@ header h1 {
     float: right;
     width: 75%;
     height: 100%;
+    margin-top: -16.5rem;
 }
-#curWeather {
-    background: rgba(127, 200, 248);
+#curWeather, .forecastDiv {
+    border: solid rgba(127, 200, 248, .5);
+    background-color: rgba(127, 200, 248, .8);
     color: var(--title);
 }
